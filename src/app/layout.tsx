@@ -18,7 +18,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-      <ThemeProvider attribute="class" enableSystem storageKey="nw-theme" defaultTheme="system" disableTransitionOnChange={true}>
+        <ThemeProvider
+          attribute="class"
+          enableSystem={true}
+          storageKey="nw-theme"
+          defaultTheme="system"
+          disableTransitionOnChange={true}
+        >
           {children}
         </ThemeProvider>
       </body>
